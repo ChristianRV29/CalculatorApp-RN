@@ -1,11 +1,12 @@
 import React, {Fragment} from 'react';
 import {View, Text} from 'react-native';
+import {appStyles} from './../styles/styles';
 
-export const Test = () => {
+export const CalculatorScreen = () => {
   return (
     <Fragment>
       <View>
-        <Text>Hello world!</Text>
+        <Text style={appStyles.text}>Calculator screen</Text>
       </View>
     </Fragment>
   );
