@@ -2,8 +2,8 @@ import {StyleSheet} from 'react-native';
 
 export const appStyles = StyleSheet.create({
   appBackground: {
-    flex: 1,
     backgroundColor: 'black',
+    flex: 1,
   },
   calculatorContainer: {
     flex: 1,
@@ -34,9 +34,9 @@ export const appStyles = StyleSheet.create({
     width: 80,
   },
   buttonText: {
-    textAlign: 'center',
     color: 'white',
     fontSize: 30,
     fontWeight: '300',
+    textAlign: 'center',
   },
 });

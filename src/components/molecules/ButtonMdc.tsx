@@ -1,16 +1,33 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Text, TouchableOpacity} from 'react-native';
 import {appStyles} from '../../styles/styles';
 
 interface ButtonProps {
   text: string;
   color?: string;
+  isWide?: boolean;
 }
 
-export const ButtonMdc = ({text, color = '2D2D2D'}: ButtonProps) => {
+export const ButtonMdc = ({
+  text,
+  color = '#2D2D2D',
+  isWide = false,
+}: ButtonProps) => {
   return (
-    <View style={{...appStyles.button, backgroundColor: color}}>
-      <Text style={appStyles.buttonText}>{text}</Text>
-    </View>
+    <TouchableOpacity
+      style={{
+        ...appStyles.button,
+        backgroundColor: color,
+        width: isWide ? 180 : 80,
+      }}>
+      <Text
+        style={{
+          ...appStyles.buttonText,
+          color: color === '#9B9B9B' ? 'black' : 'white',
+        }}>
+        {text}
+      </Text>
+    </TouchableOpacity>
   );
 };
