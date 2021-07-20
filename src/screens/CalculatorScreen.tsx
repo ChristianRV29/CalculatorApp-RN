@@ -15,6 +15,29 @@ export const CalculatorScreen = () => {
           <ButtonMdc text={'%'} color={'#9B9B9B'} />
           <ButtonMdc text={'/'} color={'#FF9427'} />
         </View>
+        <View style={appStyles.buttonsContainer}>
+          <ButtonMdc text={'7'} />
+          <ButtonMdc text={'8'} />
+          <ButtonMdc text={'9'} />
+          <ButtonMdc text={'X'} color={'#FF9427'} />
+        </View>
+        <View style={appStyles.buttonsContainer}>
+          <ButtonMdc text={'4'} />
+          <ButtonMdc text={'5'} />
+          <ButtonMdc text={'6'} />
+          <ButtonMdc text={'-'} color={'#FF9427'} />
+        </View>
+        <View style={appStyles.buttonsContainer}>
+          <ButtonMdc text={'1'} />
+          <ButtonMdc text={'2'} />
+          <ButtonMdc text={'3'} />
+          <ButtonMdc text={'+'} color={'#FF9427'} />
+        </View>
+        <View style={appStyles.buttonsContainer}>
+          <ButtonMdc text={'0'} isWide />
+          <ButtonMdc text={'.'} />
+          <ButtonMdc text={'='} color={'#FF9427'} />
+        </View>
       </View>
     </Fragment>
   );
