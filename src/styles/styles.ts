@@ -20,14 +20,19 @@ export const appStyles = StyleSheet.create({
     fontSize: 30,
     textAlign: 'right',
   },
+  buttonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginBottom: 18,
+    paddingHorizontal: 10,
+  },
   button: {
-    height: 80,
-    width: 80,
-    backgroundColor: '#333',
     borderRadius: 100,
     justifyContent: 'center',
+    marginHorizontal: 10,
+    height: 80,
+    width: 80,
   },
-
   buttonText: {
     textAlign: 'center',
     color: 'white',
