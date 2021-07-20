@@ -7,15 +7,18 @@ interface ButtonProps {
   text: string;
   color?: string;
   isWide?: boolean;
+  action: (numberText: string) => void;
 }
 
 export const ButtonMdc = ({
   text,
   color = '#2D2D2D',
   isWide = false,
+  action,
 }: ButtonProps) => {
   return (
     <TouchableOpacity
+      onPress={() => action(text)}
       style={{
         ...appStyles.button,
         backgroundColor: color,
